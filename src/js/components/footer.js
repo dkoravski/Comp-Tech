@@ -74,11 +74,11 @@ export function createFooter() {
                         <h6 class="mb-3">Контакти</h6>
                         <div class="contact-item mb-2">
                             <i class="bi bi-geo-alt me-2"></i>
-                            ул. Тех 123, София, България 1000
+                            ул. бул. Добруджа 41, Добрич, България 9300
                         </div>
                         <div class="contact-item mb-2">
                             <i class="bi bi-telephone me-2"></i>
-                            +359 2 123 4567
+                            +359 58 632 236
                         </div>
                         <div class="contact-item mb-2">
                             <i class="bi bi-envelope me-2"></i>
