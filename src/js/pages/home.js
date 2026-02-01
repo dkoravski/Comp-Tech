@@ -12,12 +12,55 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize navigation
     new Navigation();
     
+    // Add 3D tech background elements
+    createTech3DBackground();
+    
     // Load services preview
     loadServicesPreview();
     
     // Initialize animations and interactions
     initializeHomePageInteractions();
 });
+
+function createTech3DBackground() {
+    const heroImage = document.querySelector('.hero-image');
+    if (!heroImage) return;
+    
+    // Create tech icons grid in background
+    const techIconsGrid = document.createElement('div');
+    techIconsGrid.className = 'tech-icons-grid';
+    
+    const techIcons = [
+        'bi bi-cpu',           // CPU/Processor
+        'bi bi-hdd-rack',      // Server/Storage
+        'bi bi-laptop',        // Computer
+        'bi bi-diagram-3'      // Network/Diagram
+    ];
+    
+    techIcons.forEach(icon => {
+        const iconElement = document.createElement('i');
+        iconElement.className = `${icon} tech-icon-item`;
+        techIconsGrid.appendChild(iconElement);
+    });
+    
+    heroImage.appendChild(techIconsGrid);
+    
+    // Create 3D cube containers
+    const cubeContainer = document.createElement('div');
+    cubeContainer.className = 'tech-cube-container';
+    
+    for (let i = 0; i < 2; i++) {
+        const cube = document.createElement('div');
+        cube.className = 'tech-cube';
+        cube.style.borderLeft = '2px solid rgba(0, 212, 255, 0.3)';
+        cube.style.borderRight = '2px solid rgba(0, 212, 255, 0.2)';
+        cube.style.borderTop = '2px solid rgba(0, 212, 255, 0.4)';
+        cube.style.borderBottom = '2px solid rgba(0, 212, 255, 0.15)';
+        cubeContainer.appendChild(cube);
+    }
+    
+    heroImage.appendChild(cubeContainer);
+}
 
 function loadServicesPreview() {
     const servicesPreview = document.getElementById('services-preview');

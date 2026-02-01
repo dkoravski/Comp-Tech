@@ -3,7 +3,7 @@ export function createHeader() {
         <header class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="/index.html">
-                    <i class="bi bi-pc-display me-2"></i>CompTech
+                    <i class="bi bi-pc-display me-2"></i>Comp-Tech
                 </a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

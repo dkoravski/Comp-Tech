@@ -3,7 +3,7 @@ export const teamData = [
         name: 'Alex Petrov',
         position: 'Старши ИТ техник',
         description: 'Хардуерен специалист с над 8 години опит в ремонта на компютри и настройка на мрежи.',
-        email: 'alex.petrov@comptech.bg',
+        email: 'alex.petrov@comp-tech.bg',
         phone: '+359888123456',
         skills: ['Ремонт на хардуер', 'Настройка на мрежа', 'Диагностика', 'Смяна на компоненти']
     },
@@ -11,7 +11,7 @@ export const teamData = [
         name: 'Maria Georgiev',
         position: 'Софтуерен инженер',
         description: 'Експерт по инсталация на софтуер, оптимизация на системи и разработка на персонализирани приложения.',
-        email: 'maria.georgiev@comptech.bg',
+        email: 'maria.georgiev@comp-tech.bg',
         phone: '+359888123457',
         skills: ['Инсталация на софтуер', 'Оптимизация на системи', 'Програмиране', 'Управление на бази данни']
     },
@@ -19,7 +19,7 @@ export const teamData = [
         name: 'Ivan Dimitrov',
         position: 'Специалист по киберсигурност',
         description: 'Сертифициран експерт по киберсигурност, специализиран в анализ на заплахи и внедряване на защита.',
-        email: 'ivan.dimitrov@comptech.bg',
+        email: 'ivan.dimitrov@comp-tech.bg',
         phone: '+359888123458',
         skills: ['Киберсигурност', 'Анализ на заплахи', 'Мрежова сигурност', 'Съответствие']
     },
@@ -27,7 +27,7 @@ export const teamData = [
         name: 'Elena Stoyanv',
         position: 'Специалист по възстановяване на данни',
         description: 'Специалист по възстановяване на данни с модерни инструменти и техники за всички носители.',
-        email: 'elena.stoyanv@comptech.bg',
+        email: 'elena.stoyanv@comp-tech.bg',
         phone: '+359888123459',
         skills: ['Възстановяване на данни', 'RAID системи', 'Форензик анализ', 'Сторидж решения']
     },
@@ -35,7 +35,7 @@ export const teamData = [
         name: 'Georgi Todorov',
         position: 'Мениджър ИТ поддръжка',
         description: 'Управлява ИТ поддръжката и гарантира отлично обслужване на клиенти.',
-        email: 'georgi.todorov@comptech.bg',
+        email: 'georgi.todorov@comp-tech.bg',
         phone: '+359888123460',
         skills: ['ИТ управление', 'Обслужване на клиенти', 'Лидерство на екип', 'Доставка на услуги']
     },
@@ -43,7 +43,7 @@ export const teamData = [
         name: 'Svetlana Nikolov',
         position: 'Мрежов администратор',
         description: 'Експерт по проектиране и поддръжка на бизнес мрежи с фокус върху сигурност и производителност.',
-        email: 'svetlana.nikolov@comptech.bg',
+        email: 'svetlana.nikolov@comp-tech.bg',
         phone: '+359888123461',
         skills: ['Мрежова администрация', 'Управление на сървъри', 'Настройка на VPN', 'Оптимизация на производителност']
     }

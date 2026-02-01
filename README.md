@@ -1,4 +1,4 @@
-# CompTech - Multi-Page IT Services Website
+# Comp-Tech - Multi-Page IT Services Website
 
 A professional multi-page JavaScript application for a computer maintenance and IT services company built with Vite, Bootstrap, and vanilla JavaScript.
 

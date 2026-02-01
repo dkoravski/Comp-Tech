@@ -6,7 +6,7 @@ export function createFooter() {
                     <!-- Company Info -->
                     <div class="col-lg-4">
                         <h5 class="mb-3">
-                            <i class="bi bi-pc-display me-2"></i>CompTech
+                            <i class="bi bi-pc-display me-2"></i>Comp-Tech
                         </h5>
                         <p class="mb-3">
                             Професионални ИТ услуги и компютърна поддръжка за бизнеси и частни клиенти. 
@@ -82,7 +82,7 @@ export function createFooter() {
                         </div>
                         <div class="contact-item mb-2">
                             <i class="bi bi-envelope me-2"></i>
-                            info@comptech.bg
+                            info@comp-tech.bg
                         </div>
                         <div class="contact-item">
                             <i class="bi bi-clock me-2"></i>
@@ -95,7 +95,7 @@ export function createFooter() {
                 <hr class="my-4">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <p class="mb-0">&copy; 2026 CompTech. Всички права запазени.</p>
+                        <p class="mb-0">&copy; 2026 Comp-Tech. Всички права запазени.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <div class="footer-links">

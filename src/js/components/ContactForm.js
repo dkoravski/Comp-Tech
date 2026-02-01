@@ -156,7 +156,7 @@ export class ContactForm {
 
         // Add additional data
         data.timestamp = new Date().toISOString();
-        data.source = 'Форма за контакт - уебсайт CompTech';
+        data.source = 'Форма за контакт - уебсайт Comp-Tech';
         
         return data;
     }
