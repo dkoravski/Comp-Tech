@@ -24,11 +24,13 @@ function loadTeamGrid() {
     if (teamGrid) {
         teamGrid.innerHTML = teamData.map(member => `
             <div class="col-md-6 col-lg-4">
-                <div class="team-card text-center p-4 bg-white rounded shadow">
+                <div class="team-card text-center p-4 bg-white rounded shadow h-100">
                     <div class="team-photo mb-3">
-                        <div class="avatar-placeholder bg-primary text-white rounded-circle mx-auto d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
-                            <i class="bi bi-person fs-1"></i>
-                        </div>
+                        <img src="${member.image}" 
+                             alt="${member.name}" 
+                             class="rounded-3 border border-2 border-primary shadow img-fluid"
+                             style="width: 180px; height: 220px; object-fit: cover;"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/180x220?text=No+Image';">
                     </div>
                     <h5 class="mb-1">${member.name}</h5>
                     <p class="text-primary mb-2">${member.position}</p>
@@ -36,17 +38,8 @@ function loadTeamGrid() {
                     
                     <div class="team-skills mb-3">
                         ${member.skills.map(skill => `
-                            <span class="badge bg-light text-dark me-1 mb-1">${skill}</span>
+                            <span class="skill-chip">${skill}</span>
                         `).join('')}
-                    </div>
-                    
-                    <div class="team-contact">
-                        <a href="mailto:${member.email}" class="text-primary text-decoration-none me-3" title="Email">
-                            <i class="bi bi-envelope"></i>
-                        </a>
-                        <a href="tel:${member.phone}" class="text-primary text-decoration-none" title="Phone">
-                            <i class="bi bi-telephone"></i>
-                        </a>
                     </div>
                 </div>
             </div>

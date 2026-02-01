@@ -37,7 +37,7 @@ export function createHeader() {
                     <div class="d-flex align-items-center gap-3">
                         <div class="contact-info d-none d-lg-flex align-items-center text-light">
                             <i class="bi bi-telephone me-2"></i>
-                            <span>+359 2 123 4567</span>
+                            <span>+359 58 623 326</span>
                         </div>
                         <a href="/contact.html" class="btn btn-light btn-sm">
                             <i class="bi bi-chat-dots me-1"></i>Получете оферта

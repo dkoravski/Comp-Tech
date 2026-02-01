@@ -336,6 +336,15 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.team-photo img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
+}
+
 .avatar-placeholder {
     background: linear-gradient(135deg, var(--primary-color), var(--tech-blue));
     transition: var(--transition);
@@ -343,6 +352,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .team-card:hover .avatar-placeholder {
     transform: scale(1.05);
+}
+
+.team-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+}
+
+.skill-chip {
+    border: 1px solid rgba(13, 110, 253, 0.3);
+    border-radius: 999px;
+    padding: 0.25rem 0.85rem;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    background: rgba(13, 110, 253, 0.08);
+    transition: var(--transition);
+}
+
+.skill-chip:hover {
+    background: rgba(13, 110, 253, 0.15);
+    border-color: var(--primary-color);
 }
 
 /* Contact Form */
