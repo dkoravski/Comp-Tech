@@ -1,0 +1,392 @@
+/* CompTech - Custom CSS for IT Services Company */
+
+/* CSS Custom Properties (Variables) */
+:root {
+    --primary-color: #0d6efd;
+    --primary-dark: #0b5ed7;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    
+    /* Custom IT Theme Colors */
+    --tech-blue: #1e40af;
+    --tech-green: #059669;
+    --tech-gray: #64748b;
+    --tech-light: #f1f5f9;
+    
+    /* Spacing */
+    --section-padding: 5rem 0;
+    --card-border-radius: 0.75rem;
+    --transition: all 0.3s ease;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.display-1, .display-2, .display-3, .display-4 {
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+.btn {
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--tech-blue) 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.3);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
+}
+
+/* Header & Navigation */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: var(--transition);
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--tech-light) 0%, white 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.hero-image {
+    text-align: center;
+    position: relative;
+}
+
+.hero-image i {
+    color: var(--primary-color);
+    opacity: 0.8;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Page Headers */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--tech-blue) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0 20L100 0v20z" fill="rgba(255,255,255,0.05)"/></svg>');
+    background-size: 100px 20px;
+}
+
+/* Service Cards */
+.service-card {
+    border: none;
+    transition: var(--transition);
+    overflow: hidden;
+    position: relative;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--tech-green));
+    transform: translateX(-100%);
+    transition: var(--transition);
+}
+
+.service-card:hover::before {
+    transform: translateX(0);
+}
+
+.service-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Features Lists */
+.service-features ul li {
+    transition: var(--transition);
+}
+
+.service-features ul li:hover {
+    transform: translateX(5px);
+    color: var(--primary-color);
+}
+
+/* Team Cards */
+.team-card {
+    border: none;
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-placeholder {
+    background: linear-gradient(135deg, var(--primary-color), var(--tech-blue));
+    transition: var(--transition);
+}
+
+.team-card:hover .avatar-placeholder {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+.form-control, .form-select {
+    border: 2px solid #e9ecef;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+    background: white;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+/* Contact Info */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    transition: var(--transition);
+}
+
+.contact-item i {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+/* Process Steps */
+.process-step {
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--tech-blue));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+footer h5, footer h6 {
+    color: white;
+}
+
+footer a {
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+    transform: translateX(3px);
+}
+
+.social-links a {
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Back to Top Button */
+#back-to-top {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+#back-to-top:hover {
+    transform: scale(1.1);
+}
+
+/* Utility Classes */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--tech-blue) 100%);
+}
+
+.text-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--tech-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.shadow-custom {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlight animation for services */
+.highlight-service {
+    animation: highlight 3s ease-in-out;
+}
+
+@keyframes highlight {
+    0%, 100% { transform: scale(1); }
+    50% { 
+        transform: scale(1.02);
+        box-shadow: 0 0 30px rgba(13, 110, 253, 0.3);
+    }
+}
+
+/* Map Placeholder */
+.map-placeholder {
+    min-height: 300px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--tech-gray));
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .process-step {
+        padding: 1rem 0.5rem;
+    }
+    
+    .contact-info {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --section-padding: 3rem 0;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .hero-section .col-lg-6:first-child {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar, footer, #back-to-top {
+        display: none !important;
+    }
+    
+    .hero-section {
+        background: white !important;
+    }
+    
+    * {
+        box-shadow: none !important;
+    }
+}
